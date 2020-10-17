@@ -1,0 +1,587 @@
+@media (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 26px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 20px 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+
+
+    header .info
+    {
+        padding: 0;
+    }
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .contacts
+    {
+        width: 100%;
+    }
+
+    header .contacts > *
+    {
+        display: none;
+    }
+
+
+    header .menu.absolute
+    {
+        position: relative;
+        left: 0;
+
+        width: 100%;
+        margin-top: 20px;
+        padding: 13px 0;
+    }
+
+    header .menu .item
+    {
+        width: 100%;
+    }
+
+    header .menu .item > a
+    {
+        min-height: 0;
+        padding: 12px 20px;
+
+        text-align-last: left;
+
+        justify-content: flex-start;
+    }
+
+
+    header .menu .item .sub_menu,
+    header .menu .item:hover .sub_menu
+    {
+        position: relative;
+        top: 0;
+
+        display: none;
+        visibility: visible;
+
+        width: 100%;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+    header .menu .item > a.touch_link + .sub_menu.show
+    {
+        top: 0;
+
+        display: block;
+    }
+
+    header .menu .sub_menu a
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 10px 20px;
+
+        white-space: normal;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-top: 20px;
+
+        border-top: 1px solid #ddd;
+    }
+
+
+    .breadcrumbs .sep
+    {
+        margin: 0 10px;
+    }
+
+
+    .page_title
+    {
+        font-size: 28px;
+        line-height: 36px;
+
+        margin-top: 20px;
+    }
+
+
+    .page_desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 25px;
+    }
+
+    .block_head .title
+    {
+        line-height: 34px;
+    }
+
+
+    .block_head .title:before
+    {
+        top: 16px;
+    }
+
+    .block_head .desc
+    {
+        line-height: 22px;
+    }
+
+    .block_head .desc2
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .text_block h3
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: 50px;
+    }
+
+
+    .text_block ul li,
+    .text_block ol li
+    {
+        padding-left: 35px;
+    }
+
+    .text_block ul li + li
+    {
+        margin-top: 15px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: calc(50% - 10px);
+    }
+
+    .text_block .cols .col.bg
+    {
+        padding: 25px;
+    }
+
+    .text_block .cols .col .title
+    {
+        line-height: inherit;
+    }
+
+
+    .text_block .message
+    {
+        padding: 25px;
+    }
+
+
+    .text_block table th,
+    .text_block table td
+    {
+        padding: 10px 20px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        min-height: 420px;
+        padding: 60px 100px;
+    }
+
+    .main_slider .data .info
+    {
+        width: 435px;
+        margin-left: 20px;
+    }
+
+    .main_slider .data .title
+    {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .main_slider .data .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        padding: 12px 25px;
+    }
+
+    .main_slider .owl-dots
+    {
+        bottom: 20px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service.service1,
+    .services .service.service2,
+    .services .service.service3,
+    .services .service.service4
+    {
+        width: 50%;
+    }
+
+
+    .services .service.service1 .info,
+    .services .service.service2 .info,
+    .services .service.service3 .info,
+    .services .service.service4 .info
+    {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .services .service .details
+    {
+        margin-top: 20px;
+    }
+
+
+    .services .service.service1 .thumb,
+    .services .service .thumb
+    {
+        width: 100%;
+        margin-top: auto;
+
+        order: 2;
+    }
+
+    .services .service.service1 .thumb
+    {
+        background: #e3e3e3;
+    }
+
+    .services .service .thumb img
+    {
+        clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 100%) !important;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .row > *
+    {
+        width: calc(33.333% + 1px);
+    }
+
+    .categories .cat
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .owl-carousel .owl-nav button
+    {
+        bottom: calc(100% + 15px);
+    }
+
+
+    .projects .project .object .val
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .projects .project .equipment .val
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 5px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .row
+    {
+        margin-bottom: -30px;
+    }
+
+    .products .row > *
+    {
+        width: calc(100% - 20px);
+        margin-bottom: 30px;
+    }
+
+
+    .products .product .features
+    {
+        margin-top: 20px;
+    }
+
+    .products .product .features > * > *
+    {
+        width: 200px;
+    }
+
+    .products .product .features .val
+    {
+        width: calc(100% - 200px);
+        padding-left: 20px;
+    }
+
+
+    .products .product .details
+    {
+        margin-top: 25px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .data
+    {
+        padding: 30px;
+    }
+
+
+    .feedback .data .info
+    {
+        width: 100%;
+    }
+
+    .feedback .data .title
+    {
+        line-height: 34px;
+    }
+
+    .feedback .data .title br ~ br
+    {
+        display: none;
+    }
+
+    .feedback .data .call
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 20px;
+    }
+
+    .feedback .data .phone
+    {
+        font-size: 19px;
+
+        margin-top: 5px;
+    }
+
+
+    .feedback .data .form
+    {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .image
+    {
+        width: 641px;
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 81.12%;
+    }
+
+
+    .product_info .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------------
+        Product features
+    ----------------------*/
+    .product_features .list .title
+    {
+        line-height: 20px;
+
+        width: 100%;
+    }
+
+    .product_features .list .features
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu
+    {
+        display: block;
+
+        width: auto;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    footer .menu > *
+    {
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    footer .menu > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    footer .creator
+    {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 30px;
+    }
+}

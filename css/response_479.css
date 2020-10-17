@@ -1,0 +1,402 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 22px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .mob_header .logo a,
+    .mob_header .logo img
+    {
+        height: 25px;
+    }
+
+
+    .mob_header .contacts
+    {
+        width: 100%;
+        margin-top: 5px;
+
+        order: 3;
+    }
+
+    .mob_header .phone
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .mob_header .callback_btn
+    {
+        display: inline-block;
+
+        margin-left: auto;
+        padding: 10px 20px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .breadcrumbs
+    {
+        line-height: 20px;
+    }
+
+
+    .page_title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        margin-top: 15px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+    .block_head .title
+    {
+        line-height: 28px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 25px;
+    }
+
+    .form .agree
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+    .form .bottom .submit
+    {
+        width: 100%;
+    }
+
+
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 22px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        margin-bottom: 15px;
+    }
+
+    .text_block h3
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: 40px;
+    }
+
+
+    .text_block ul li,
+    .text_block ol li
+    {
+        padding-left: 30px;
+    }
+
+    .text_block ul li:before
+    {
+        top: 3px;
+    }
+
+
+    .text_block .cols .col.bg
+    {
+        padding: 20px;
+    }
+
+
+    .text_block .gallery .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data .title
+    {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .main_slider .data .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: 192px;
+        padding: 10px 20px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .block_head
+    {
+        padding-left: 20px;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .row > *
+    {
+        width: calc(100% + 1px);
+    }
+
+    .categories .cat
+    {
+        display: flex;
+
+        min-height: 0;
+        padding: 14px 14px 14px 19px;
+
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .categories .cat .name
+    {
+        width: calc(100% - 130px);
+    }
+
+    .categories .cat .thumb
+    {
+        position: relative;
+
+        width: 120px;
+        min-height: 0;
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects .block_head
+    {
+        padding-right: 110px;
+    }
+
+    .projects .owl-carousel .owl-nav button
+    {
+        bottom: calc(100% + 20px);
+    }
+
+
+    .projects .project .thumb
+    {
+        width: 100%;
+        min-height: 0;
+        padding-bottom: 66.666%;
+    }
+
+    .projects .project .thumb + .info
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .product .thumb
+    {
+        width: 320px;
+        height: 320px;
+    }
+
+    .products .product .thumb + .info
+    {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
+    .products .product .features > * > *
+    {
+        width: 160px;
+    }
+
+    .products .product .features .val
+    {
+        width: calc(100% - 160px);
+        padding-left: 20px;
+    }
+
+
+
+    /*--------------
+        Feedback
+    --------------*/
+    .feedback .data
+    {
+        padding: 24px;
+    }
+
+    .feedback .data .title
+    {
+        line-height: 28px;
+    }
+
+    .feedback .data .call
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .feedback .data .phone
+    {
+        font-size: 18px;
+
+        margin-top: 4px;
+    }
+
+
+
+    /*----------------------
+        Product features
+    ----------------------*/
+    .product_features .list .features .item > *
+    {
+        width: 100%;
+    }
+
+    .product_features .list .features .item .name
+    {
+        padding-bottom: 5px;
+    }
+
+    .product_features .list .features .item > * + *
+    {
+        padding-top: 0;
+
+        border-left: none;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu
+    {
+        width: calc(100% + 20px);
+        margin-left: -20px;
+    }
+
+    footer .menu > *
+    {
+        width: calc(50% - 20px);
+        margin-left: 20px;
+    }
+
+
+
+    footer .contacts > *
+    {
+        width: calc(50% - 10px);
+    }
+
+    footer .contacts > * + *
+    {
+        margin-left: auto;
+    }
+
+    footer .contacts .time
+    {
+        margin-top: 38px;
+    }
+
+    footer .contacts .instagram
+    {
+        margin-top: 18px;
+    }
+
+    footer .contacts .item .val br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 30px;
+    }
+
+    .modal_title
+    {
+        font-size: 25px;
+        line-height: 31px;
+    }
+}

@@ -1,0 +1,98 @@
+@media (max-width: 1538px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .block
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .buttonUp
+    {
+        display: none !important;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 100px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .block_head
+    {
+        padding-right: 40px;
+        padding-left: 100px;
+    }
+
+
+    .services .service.service2 .info
+    {
+        padding: 0 30px 33px 100px;
+    }
+
+    .services .service.service4 .info
+    {
+        padding-right: 28px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
