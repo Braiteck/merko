@@ -2650,7 +2650,10 @@ header .menu .sub_menu a.active
     color: #000;
     line-height: 24px;
 
+    position: relative;
+
     display: block;
+    overflow: hidden;
 
     text-decoration: none;
 }
@@ -2685,6 +2688,68 @@ header .menu .sub_menu a.active
 .gallery .item .caption
 {
     margin-top: 28px;
+}
+
+
+.gallery .item .info
+{
+    color: #fff;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 55px 40px 120px;
+
+    background: linear-gradient(90deg, rgba(0, 0, 0, .56) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery .item .info .title
+{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 26px;
+
+    width: 262px;
+    max-width: 100%;
+}
+
+.gallery .item .info .desc
+{
+    line-height: 24px;
+
+    width: 312px;
+    max-width: 100%;
+    margin-top: 35px;
+}
+
+.gallery .item .info .btn
+{
+    font-weight: 500;
+    line-height: 14px;
+
+    position: absolute;
+    bottom: 55px;
+    left: 40px;
+
+    display: inline-block;
+
+    height: 42px;
+    padding: 14px 30px;
+
+    transition: background .2s linear;
+    text-align: center;
+    vertical-align: top;
+
+    border-radius: 3px;
+    background: #707272;
+}
+
+.gallery .item .info .btn:hover
+{
+    background: #d43329;
 }
 
 
@@ -2833,6 +2898,75 @@ header .menu .sub_menu a.active
 {
     width: 664px;
     max-width: calc(100% - 507px);
+}
+
+
+
+/*----------------
+    Advantages
+----------------*/
+.advantages .row
+{
+    margin-bottom: -78px;
+    margin-left: -68px;
+
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.advantages .row > *
+{
+    width: calc(33.333% - 68px);
+    margin-bottom: 78px;
+    margin-left: 68px;
+}
+
+
+.advantages .item
+{
+    line-height: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 10px;
+
+    text-align: center;
+}
+
+.advantages .item > * + *
+{
+    margin-top: 20px;
+}
+
+.advantages .item .icon
+{
+    display: flex;
+
+    height: 71px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.advantages .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.advantages .item .name
+{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+
+    flex: 1 0 auto;
 }
 
 

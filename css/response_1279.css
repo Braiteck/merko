@@ -503,6 +503,36 @@
     }
 
 
+    .gallery .item .info
+    {
+        padding: 35px 35px 112px;
+
+        opacity: 1;
+    }
+
+    .gallery .item .info .title
+    {
+        font-size: 20px;
+        line-height: 25px;
+
+        width: 250px;
+    }
+
+    .gallery .item .info .desc
+    {
+        line-height: 22px;
+
+        width: 310px;
+        margin-top: 20px;
+    }
+
+    .gallery .item .info .btn
+    {
+        bottom: 35px;
+        left: 35px;
+    }
+
+
 
     /*---------
         FAQ
@@ -515,6 +545,32 @@
     .faq .item .data
     {
         padding: 10px 50px 25px 30px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -60px;
+        margin-left: -40px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(33.333% - 40px);
+        margin-bottom: 60px;
+        margin-left: 40px;
+    }
+
+
+    .advantages .item
+    {
+        line-height: 22px;
+
+        padding: 0;
     }
 
 

@@ -332,6 +332,41 @@
 
 
 
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+    .gallery .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    .gallery .item .thumb
+    {
+        padding-bottom: 75%;
+    }
+
+    .gallery .item .info
+    {
+        padding: 25px 25px 92px;
+    }
+
+    .gallery .item .info .btn
+    {
+        bottom: 25px;
+        left: 25px;
+    }
+
+
+
     /*---------
         FAQ
     ---------*/
@@ -351,6 +386,22 @@
     .faq .item .data
     {
         padding: 10px 20px 20px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -50px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(100% - 40px);
+        margin-bottom: 50px;
     }
 
 

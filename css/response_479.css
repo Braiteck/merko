@@ -342,6 +342,48 @@
 
 
 
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .item .thumb
+    {
+        padding-bottom: 100%;
+    }
+
+    .gallery .item .info
+    {
+        padding: 20px 20px 82px;
+    }
+
+    .gallery .item .info .btn
+    {
+        bottom: 20px;
+        left: 20px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item > * + *
+    {
+        margin-top: 15px;
+    }
+
+    .advantages .item .icon
+    {
+        height: 61px;
+    }
+
+    .advantages .item .name
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
